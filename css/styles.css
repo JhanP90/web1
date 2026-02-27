@@ -1,30 +1,25 @@
-/* ===== SELECTOR UNIVERSAL ===== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ===== SELECTOR DE ELEMENTO ===== */
 p {
     line-height: 1.6;
 }
 
-/* ===== SELECTOR DE CLASE ===== */
 .destacado {
     background-color: yellow;
     padding: 0.5rem;
     font-weight: bold;
 }
 
-/* ===== SELECTOR DE ID ===== */
 #encabezado-principal {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
-/* ===== SELECTOR DE ATRIBUTO ===== */
 input[type="email"] {
     border-color: blue;
     border-width: 2px;
@@ -32,15 +27,11 @@ input[type="email"] {
     margin: 0.5rem 0;
 }
 
-/* ===== SELECTORES COMBINADOS ===== */
-
-/* Descendiente: Todos los párrafos dentro de .contenedor */
 .contenedor p {
     margin-bottom: 1rem;
     color: #555;
 }
 
-/* Hijo directo: Solo las listas (ul) que son hijos directos de .sidebar */
 .sidebar > ul {
     list-style: none;
     background-color: #f0f0f0;
@@ -53,7 +44,6 @@ input[type="email"] {
     font-weight: bold;
 }
 
-/* Hermano adyacente: El primer párrafo que viene después de h2 */
 h2 + p {
     font-weight: bold;
     color: #000;
@@ -61,12 +51,10 @@ h2 + p {
     padding: 0.5rem;
 }
 
-/* Hermanos generales: Todos los párrafos hermanos de h2 */
 h2 ~ p {
     color: #666;
 }
 
-/* ===== ESTILOS GENERALES ===== */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
