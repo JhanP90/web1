@@ -3,50 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplos de Selectores CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
-
-
 
 <body>
     
 <header>
-    <h1>Jhan Pool posada</h1>
-        <h2>Programador junior</h2>
-        <h3>Tecnologo en desarrollo de software</h3>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <h1 id="encabezado-principal">Jhan Pool posada</h1>
+    <h2>Programador junior</h2>
+    <h3>Tecnologo en desarrollo de software</h3>
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
+    <!-- EJEMPLO 1: Selector de elemento (p) -->
     <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Programador junior apasionado por el desarrollo web egresado como tecnologo en desarrollo de software.</p>
+        <h2>Sobre mí</h2>
+        <p>Programador junior apasionado por el desarrollo web egresado como tecnologo en desarrollo de software.</p>
     </section>
 
+    <!-- EJEMPLO 2: Selector de clase (.destacado) y Descendiente (.contenedor p) -->
     <section id="experiencia">
         <h2>Experiencia academica</h2>
+        <div class="contenedor">
             <article>
                 <h3>Desarrollador web 1</h3>
                 <p>Proyectos de diseño web academicos</p>
+                <p class="destacado">Este párrafo está destacado en amarillo.</p>
             </article>
             <article>
                 <p>Diseño y maquetación de sitios web responsivos.</p>
             </article>
+        </div>
+    </section>
+
+    <!-- EJEMPLO 3: Selector de atributo (input[type="email"]) -->
+    <section id="formulario">
+        <h2>Formulario de contacto</h2>
+        <p>Ingresa tu email:</p>
+        <form>
+            <input type="email" placeholder="tu@email.com">
+            <input type="text" placeholder="Tu nombre">
+            <input type="password" placeholder="Contraseña">
+        </form>
+    </section>
+
+    <!-- EJEMPLO 4: Selector de hijo directo (.sidebar > ul) -->
+    <section id="sidebar-ejemplo">
+        <h2>Menú lateral</h2>
+        <div class="sidebar">
+            <ul>
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+            </ul>
+            <div>
+                <ul>
+                    <li>Esta lista está dentro de un div</li>
+                    <li>No tiene el estilo ya que no es hijo directo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EJEMPLO 5: Selector hermano adyacente (h2 + p) y hermanos generales (h2 ~ p) -->
+    <section id="selectores-hermanos">
+        <h2>Selectores de hermanos</h2>
+        <p>Este párrafo es hermano adyacente de h2 (color oscuro).</p>
+        <p>Este párrafo es hermano general de h2 (color oscuro).</p>
+        <div>Contenido en medio</div>
+        <p>Este también es hermano general (color oscuro).</p>
     </section>
 
     <section id="contacto">
+        <h2>Contacto</h2>
         <a href="mailto:posadacasaj@gmail.com">Enviar email</a>
         <br>
         <a href="tel:+573196151237">Llamar</a>
-
     </section>
+</main>
+
+
 
 <br><br><br>
 <section id ="tablas">
@@ -87,10 +131,12 @@
         </tr>
     </tfoot>
 </table>
-</section>
+
 <br><br><br><br>
 <iframe src="https://confa.co" frameborder="0" width="100%" height="600"></iframe>
 <br><br><br><br>
+</section>
+
 
 
 <table>
@@ -126,12 +172,10 @@
     <tfoot>
     </tfoot>
 </table>
-
-</main>
-
 <footer>
-        <p><mark>&copy; 2026 Jhan Pool posada. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Jhan Pool. Todos los derechos reservados.</p>
 </footer>
+</main>
 
 </body>
 </html>
